@@ -7,7 +7,8 @@ module.exports = {
   getTaskByProjectId,
   getTaskById,
   insert,
-  insertTask
+  insertTask,
+  insertResource
 };
 
 function getProjects() {
@@ -35,6 +36,7 @@ function getTaskById(id) {
     return db('task').where({ id });
 }
 
+
 function getTaskByProjectId(id) {
   return db("task as t")
     .join("project as p", "t.project_id", "p.id")
@@ -57,5 +59,11 @@ function insert(newProject) {
 function insertTask(newTask) {
     return db('task').insert(newTask).then(ids => {
         return getTaskById(ids[0]);
+    });
+}
+
+function insertResource(newResource) {
+    return db('resource').insert(newResource).then(ids => {
+        return getResourceById(ids[0]);
     });
 }

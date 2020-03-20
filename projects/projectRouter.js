@@ -64,6 +64,19 @@ router.post('/:id/tasks', validateProjectId, (req, res) => {
     })
 });
 
+router.post('/:id/resources', validateProjectId, (req, res) => {
+    const newResource = {
+        ...req.body,
+        project_id: req.project.id
+    }
+    projects.insertResource(newResource).then(resource => {
+        res.status(201).json(resource);
+    }).catch(err => {
+        console.log(err);
+        res.status(500).json({ message: 'Unable to add the resource.'});
+    })
+});
+
 function validateProjectId(req, res, next) {
     projects.getProjectById(req.params.id).then(projects => {
         if (projects.length > 0) {
