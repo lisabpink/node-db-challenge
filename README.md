@@ -16,7 +16,7 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ X ] Create a forked copy of this project.
+-[ X ] Create a forked copy of this project.
 -[ X ] Add your _Team Lead_ as collaborator on Github.
 -[ X ] Clone your forked version of the Repository.
 -[ X ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
@@ -25,10 +25,10 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
-- [ ] Please don't merge your own pull request.
-- [ ] Add your _Team Lead_ as a Reviewer on the Pull-request
-- [ ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
+- [ X ] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
+- [ X ] Please don't merge your own pull request.
+- [ X ] Add your _Team Lead_ as a Reviewer on the Pull-request
+- [ X ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
 
 ## Commits
 
