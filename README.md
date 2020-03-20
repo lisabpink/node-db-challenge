@@ -16,12 +16,12 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [ X ] Create a forked copy of this project.
+-[ X ] Add your _Team Lead_ as collaborator on Github.
+-[ X ] Clone your forked version of the Repository.
+-[ X ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+-[ X ] Implement the project on this Branch, committing changes regularly.
+-[ X ] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
@@ -38,14 +38,17 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [ X ] Explain the difference between `Relational Databases` and `SQL`.
+    SQL is a language used to interact with relational databases. Relational databases are databases which contain tables that can contain keys pointing to keys in other tables.
 
-- [ ] Why do tables need a `primary key`?
+- [ X ] Why do tables need a `primary key`?
+    To ensure that each item has a unique identifier.
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+- [ X ] What is the name given to a table column that references the primary key on another table.
+    Foreign key.
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
-
+- [ X ] What do we need in order to have a _many to many_ relationship between two tables.
+    An intermediate table that contains foreign keys which refer back to items within different tables.
 ## Minimum Viable Product
 
 Take the steps necessary to complete the project from scratch. Start by initializing your project with a `package.json` and go from there.
