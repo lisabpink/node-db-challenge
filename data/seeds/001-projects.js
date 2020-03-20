@@ -1,13 +1,13 @@
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('table_name').del()
+ 
+  return knex('projects').truncate()
     .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+
+      return knex('projects').insert([
+        {name: 'create a react app', description: 'How to start a react app from nothing in an empty directory.'},
+        {name: 'make a node project', description: 'How to make a node project from nothing in an empty directory.'},
+        {name: 'start a knex database', description: 'How to create a knex database from nothing in an empty directory.'}
       ]);
     });
 };
