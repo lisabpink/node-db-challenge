@@ -4,7 +4,8 @@ module.exports = {
   getProjects,
   getProjectById,
   getResourcesByProjectId,
-  getTaskByProjectId
+  getTaskByProjectId,
+  insert
 };
 
 function getProjects() {
@@ -39,4 +40,10 @@ function getTaskByProjectId(id) {
       "t.notes"
     )
     .where("t.project_id", id);
+}
+
+function insert(newProject) {
+    return db('project').insert(newProject).then(ids => {
+        return getProjectById(ids[0]);
+    });
 }
